@@ -1,12 +1,13 @@
-ARCHS = armv7 armv7s arm64
-SDKVERSION = 7.0
+PACKAGE_VERSION = 1.0.0
+ARCHS = arm64 arm64e
+TARGET = iphone:clang:latest:11.0
 
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
-BUNDLE_NAME = VoiceOver
-VoiceOver_FILES = Switch.xm
-VoiceOver_LIBRARIES = flipswitch
-VoiceOver_INSTALL_PATH = /Library/Switches
-VoiceOver_LDFLAGS = -lAccessibility
+BUNDLE_NAME = VoiceOverFS
+VoiceOverFS_FILES = Switch.xm
+VoiceOverFS_LIBRARIES = flipswitch
+VoiceOverFS_INSTALL_PATH = /Library/Switches
+VoiceOverFS_LDFLAGS = -lAccessibility
 
 include $(THEOS_MAKE_PATH)/bundle.mk

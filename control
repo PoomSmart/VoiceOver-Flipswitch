@@ -1,7 +1,10 @@
-Package: org.thebigboss.voiceoverflipswitch
+Package: com.ps.voiceoverflipswitch
 Name: VoiceOver Flipswitch
-Depends: mobilesubstrate, com.a3tweaks.flipswitch, firmware (>= 5.0)
-Version: 0.0.1
+Depends: mobilesubstrate, com.a3tweaks.flipswitch, firmware (>= 11.0)
+Provides: org.thebigboss.voiceoverflipswitch
+Replaces: org.thebigboss.voiceoverflipswitch
+Conflicts: org.thebigboss.voiceoverflipswitch
+Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Flipswitch toggle for VoiceOver.
 Maintainer: PoomSmart
